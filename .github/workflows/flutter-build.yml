@@ -165,7 +165,7 @@ jobs:
       - name: Custom Code Alteration
         shell: bash
         run: |
-          patch/rdcustomization.sh
+          patches/rdcustomization.sh
 
 
       - name: Build rustdesk
@@ -263,7 +263,7 @@ jobs:
       - name: Custom add custom.txt
         shell: bash
         run: |
-          patch/rdcustomization.sh custom.txt
+          patches/rdcustomization.sh custom.txt
 
       - name: Build msi
         if: env.UPLOAD_ARTIFACT == 'true'
